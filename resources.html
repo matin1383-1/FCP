@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Resources - Foundation of Computer and Programming</title>
+    <link rel="stylesheet" href="assets/home-style.css">
+    <style>
+        .resources-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .resources-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .resources-title {
+            font-family: 'Titan One', cursive;
+            font-size: 3rem;
+            color: #eecb96;
+            margin-bottom: 1rem;
+        }
+        
+        .resources-subtitle {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        
+        .resources-content {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .resources-section {
+            margin-bottom: 2.5rem;
+        }
+        
+        .resources-section h3 {
+            color: #22335c;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #eecb96;
+            padding-bottom: 0.5rem;
+        }
+        
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .resource-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #6981ab;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .resource-title {
+            font-weight: bold;
+            color: #22335c;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .resource-description {
+            color: #555;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        
+        .resource-link {
+            color: #6981ab;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .resource-link:hover {
+            color: #22335c;
+        }
+        
+        .resource-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .resource-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .resource-list li:before {
+            content: "▶";
+            color: #6981ab;
+            position: absolute;
+            left: 0;
+        }
+        
+        .resource-list a {
+            color: #6981ab;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .resource-list a:hover {
+            color: #22335c;
+            text-decoration: underline;
+        }
+        
+        .code-example {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 1rem;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+        
+        .highlight {
+            color: #68d391;
+        }
+        
+        .comment {
+            color: #a0aec0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="syllabuss.html">Syllabus</a>
+                <a href="resources.html">Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="resources-container">
+            <div class="resources-header">
+                <h1 class="resources-title">Learning Resources</h1>
+                <p class="resources-subtitle">Foundation of Computer and Programming</p>
+            </div>
+
+            <div class="resources-content">
+                <div class="resources-section">
+                    <h3>Programming Environments</h3>
+                    <div class="resource-grid">
+                        <div class="resource-card">
+                            <div class="resource-title">Python IDLE</div>
+                            <div class="resource-description">Built-in Python development environment, perfect for beginners</div>
+                            <a href="https://www.python.org/downloads/" class="resource-link" target="_blank">Download Python →</a>
+                        </div>
+                        <div class="resource-card">
+                            <div class="resource-title">Visual Studio Code</div>
+                            <div class="resource-description">Free, powerful code editor with excellent Python support</div>
+                            <a href="https://code.visualstudio.com/" class="resource-link" target="_blank">Download VS Code →</a>
+                        </div>
+                        <div class="resource-card">
+                            <div class="resource-title">Flowgorithm</div>
+                            <div class="resource-description">Flowgorithm is a free and open-source flowchart programming tool that allows you to create and edit flowcharts, which are a visual representation of a program's logic. It is a great tool for beginners to learn programming concepts and for experienced programmers to create flowcharts for their projects.</div>
+                            <a href="https://www.flowgorithm.org/" class="resource-link" target="_blank">Download PyCharm →</a>
+                        </div>
+                        <div class="resource-card">
+                            <div class="resource-title">Jupyter Notebook</div>
+                            <div class="resource-description">Interactive programming environment for data science and learning</div>
+                            <a href="https://jupyter.org/install" class="resource-link" target="_blank">Install Jupyter →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resources-section">
+                    <h3>Online Learning Platforms</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://www.codecademy.com/learn/learn-python-3" target="_blank">Codecademy - Learn Python 3</a> - Interactive Python course</li>
+                        <li><a href="https://www.coursera.org/learn/python" target="_blank">Coursera - Python for Everybody</a> - University of Michigan course</li>
+                        <li><a href="https://www.edx.org/learn/python" target="_blank">edX - Python Programming</a> - MIT and other university courses</li>
+                        <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a> - Free coding bootcamp with Python track</li>
+                        <li><a href="https://www.khanacademy.org/computing/computer-programming" target="_blank">Khan Academy - Computer Programming</a> - Interactive programming tutorials</li>
+                    </ul>
+                </div>
+
+                <div class="resources-section">
+                    <h3>Reference Materials</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://docs.python.org/3/tutorial/" target="_blank">Python Official Tutorial</a> - Comprehensive Python documentation</li>
+                        <li><a href="https://www.w3schools.com/python/" target="_blank">W3Schools Python Tutorial</a> - Beginner-friendly Python reference</li>
+                        <li><a href="https://realpython.com/" target="_blank">Real Python</a> - High-quality Python tutorials and articles</li>
+                        <li><a href="https://automatetheboringstuff.com/" target="_blank">Automate the Boring Stuff</a> - Practical Python programming book</li>
+                        <li><a href="https://www.python.org/dev/peps/pep-0008/" target="_blank">PEP 8 Style Guide</a> - Python coding standards</li>
+                    </ul>
+                </div>
+
+                <div class="resources-section">
+                    <h3>Practice and Problem Solving</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://leetcode.com/" target="_blank">LeetCode</a> - Coding interview preparation and algorithm practice</li>
+                        <li><a href="https://www.hackerrank.com/domains/python" target="_blank">HackerRank - Python Domain</a> - Python-specific coding challenges</li>
+                        <li><a href="https://www.codewars.com/" target="_blank">Codewars</a> - Coding challenges with multiple difficulty levels</li>
+                        <li><a href="https://projecteuler.net/" target="_blank">Project Euler</a> - Mathematical programming problems</li>
+                        <li><a href="https://www.codechef.com/" target="_blank">CodeChef</a> - Competitive programming platform</li>
+                    </ul>
+                </div>
+
+                <div class="resources-section">
+                    <h3>Sample Code Examples</h3>
+                    <div class="resource-card">
+                        <div class="resource-title">Basic Python Syntax</div>
+                        <div class="code-example">
+<span class="comment"># Variables and data types</span>
+name = <span class="highlight">"Shiraz University"</span>
+age = <span class="highlight">25</span>
+is_student = <span class="highlight">True</span>
+
+<span class="comment"># Print statement</span>
+<span class="highlight">print</span>(<span class="highlight">f"Hello, {name}!"</span>)
+<span class="highlight">print</span>(<span class="highlight">f"Age: {age}"</span>)
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-title">Control Structures</div>
+                        <div class="code-example">
+<span class="comment"># Conditional statement</span>
+score = <span class="highlight">85</span>
+<span class="highlight">if</span> score >= <span class="highlight">90</span>:
+    grade = <span class="highlight">"A"</span>
+<span class="highlight">elif</span> score >= <span class="highlight">80</span>:
+    grade = <span class="highlight">"B"</span>
+<span class="highlight">else</span>:
+    grade = <span class="highlight">"C"</span>
+
+<span class="highlight">print</span>(<span class="highlight">f"Grade: {grade}"</span>)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resources-section">
+                    <h3>Useful Tools and Extensions</h3>
+                    <ul class="resource-list">
+                        <li><strong>Git and GitHub:</strong> Version control for your code projects</li>
+                        <li><strong>Python Package Manager (pip):</strong> Install additional libraries and packages</li>
+                        <li><strong>Virtual Environments:</strong> Isolate project dependencies</li>
+                        <li><strong>Code Formatters:</strong> Black, autopep8 for consistent code style</li>
+                        <li><strong>Linters:</strong> pylint, flake8 for code quality checking</li>
+                    </ul>
+                </div>
+
+                <div class="resources-section">
+                    <h3>Getting Help</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://stackoverflow.com/questions/tagged/python" target="_blank">Stack Overflow - Python Tag</a> - Q&A community for programming questions</li>
+                        <li><a href="https://www.reddit.com/r/learnpython/" target="_blank">r/learnpython</a> - Reddit community for Python learners</li>
+                        <li><a href="https://discord.gg/python" target="_blank">Python Discord</a> - Real-time chat community</li>
+                        <li><a href="https://www.python.org/community/" target="_blank">Python Community</a> - Official Python community resources</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Shiraz University - Mathematics and Computer Science Department</p>
+    </footer>
+</body>
+</html>
