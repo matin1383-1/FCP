@@ -247,3 +247,13 @@ footer {
 .hero-content, .info-container, .department-container {
     animation: fadeIn 1s ease-out;
 }
+.footer-link {
+    color: #eecb96;
+    text-decoration: none;
+    font-weight: bold;
+}
+.footer-link:hover {
+    color: #eecb96;
+    text-decoration: none;
+    font-weight: bold;
+}
